@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<Extern href="stdidcmd.h"/>
+
+	<Extern href="vsshlids.h"/>
+
+	<Extern href="msobtnid.h"/>
+	<Commands package="guidSsrsReportDeployPkg">
+		<Groups>
+			<Group guid="guidSsrsReportDeployCmdSetItem" id="MyItemGroup" priority="0x0604">
+				<Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE"/>
+			</Group>
+			<Group guid="guidSsrsReportDeployCmdSetCode" id="MyCodeGroup" priority="0x0604">
+				<Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
+			</Group>
+			<Group guid="guidSsrsReportDeployCmdSetCode" id="MyCodeGroup" priority="0x0604">
+				<Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
+			</Group>
+
+		</Groups>
+
+		<Buttons>
+			<Button guid="guidSsrsReportDeployCmdSetItem" id="cmdidSsrsReportDeployItem" priority="0x0604" type="Button">
+				<Parent guid="guidSsrsReportDeployCmdSetItem" id="MyItemGroup" />
+				<Icon guid="tIcon" id="tIcon1" />
+				<Strings>
+					<CommandName>cmdidSsrsReportDeployItem</CommandName>
+					<ButtonText>Test</ButtonText>
+					<CommandFlag>DynamicVisibility</CommandFlag>
+				</Strings>
+			</Button>
+			<Button guid="guidSsrsReportDeployCmdSetItem" id="cmdidSsrsReportDeployItem2" priority="0x0604" type="Button">
+				<Parent guid="guidSsrsReportDeployCmdSetItem" id="MyItemGroup" />
+				<Icon guid="gIcon" id="gIcon1" />
+				<Strings>
+					<CommandName>cmdidSsrsReportDeployItem2</CommandName>
+					<ButtonText>UAT</ButtonText>
+					<CommandFlag>DynamicVisibility</CommandFlag>
+				</Strings>
+			</Button>
+
+			<Button guid="guidSsrsReportDeployCmdSetItem" id="cmdidSsrsReportDeployItem3" priority="0x0604" type="Button">
+				<Parent guid="guidSsrsReportDeployCmdSetItem" id="MyItemGroup" />
+				<Icon guid="pIcon" id="pIcon1" />
+				<Strings>
+					<CommandName>cmdidSsrsReportDeployItem3</CommandName>
+					<ButtonText>Prod</ButtonText>
+					<CommandFlag>DynamicVisibility</CommandFlag>
+				</Strings>
+			</Button>
+		</Buttons>
+		<Bitmaps>
+			<Bitmap guid="gIcon" href="Resources\g.png" usedList="gIcon1"/>
+			<Bitmap guid="pIcon" href="Resources\p.png" usedList="pIcon1"/>
+			<Bitmap guid="tIcon" href="Resources\t.png" usedList="tIcon1"/>
+			<Bitmap guid="hIcon" href="Resources\h.png" usedList="hIcon1"/>
+		</Bitmaps>
+	</Commands>
+	<Symbols>		
+		<GuidSymbol name="guidSsrsReportDeployPkg" value="{4fe11457-e2e7-4a77-be51-1fcdcc6e8fb0}" />
+		<GuidSymbol name="guidSsrsReportDeployCmdSetItem" value="{E5D6DFF3-53AD-41B5-BC72-9818E4FA2ABC}">
+			<IDSymbol name="MyItemGroup" value="0x0604" />
+			<IDSymbol name="cmdidSsrsReportDeployItem" value="0x0300" />
+			<IDSymbol name="cmdidSsrsReportDeployItem2" value="0x0301" />
+			<IDSymbol name="cmdidSsrsReportDeployItem3" value="0x0302" />
+			<IDSymbol name="cmdidSsrsReportDeployItem4" value="0x0303" />
+		</GuidSymbol>
+		<GuidSymbol name="guidSsrsReportDeployCmdSetCode" value="{1BD50177-0D74-48C3-AEC5-082C75061784}">
+			<IDSymbol name="MyCodeGroup" value="0x0604" />
+			<IDSymbol name="cmdidSsrsReportDeployCode" value="0x0400" />
+		</GuidSymbol>
+		<GuidSymbol name="gIcon" value="{2b47260a-c485-440a-9f3e-e3beaabf12b1}">
+			<IDSymbol name="gIcon1" value="1" />
+		</GuidSymbol>
+		<GuidSymbol name="pIcon" value="{d8caf33a-5433-4107-a486-10d91cde54f2}">
+			<IDSymbol name="pIcon1" value="1" />
+		</GuidSymbol>
+		<GuidSymbol name="tIcon" value="{0b7b3fc7-f346-4094-bbf7-722a2b9bc713}">
+			<IDSymbol name="tIcon1" value="1" />
+		</GuidSymbol>
+		<GuidSymbol name="hIcon" value="{0b7b3fc7-f346-4094-bbf7-722a2b9bc715}">
+			<IDSymbol name="hIcon1" value="1" />
+		</GuidSymbol>
+		<GuidSymbol name="guidSolutionExplorerMenu" value="{d309f791-903f-11d0-9efc-00a0c911004f}">
+			<IDSymbol name="menuidSolutionExplorerMenu" value="850" />
+		</GuidSymbol>
+	</Symbols>
+
+</CommandTable>
